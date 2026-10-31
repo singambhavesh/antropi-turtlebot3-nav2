@@ -8,6 +8,7 @@ ROS 2 Humble / Nav2 demonstration for the **Antropi Robotics Software Intern Ass
 
 Set up a **TurtleBot3 robot in Gazebo** with the **ROS 2 Navigation2 (Nav2) stack** and demonstrate autonomous navigation in an environment with obstacles.
 
+- **Demo Video:** [`antropi_turtlebot3_nav2_demo.mp4`](antropi_turtlebot3_nav2_demo.mp4) (Full HD 1080p, 65s recording of Gazebo, RViz, and terminal)
 - **Robot:** TurtleBot3 Burger
 - **Simulator:** Gazebo Classic 11 (`gazebo_ros`)
 - **Navigation Stack:** Nav2 (Humble release) — AMCL localization, Navfn global planner, DWB local controller, and Behavior Tree navigator
