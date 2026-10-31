@@ -29,3 +29,4 @@ echo "Tip: Arrange Gazebo on the left and RViz on the right for recording."
 echo "=========================================================="
 
 ros2 launch antropi_nav_demo demo.launch.py
+
