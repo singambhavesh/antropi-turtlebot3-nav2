@@ -43,3 +43,4 @@ echo.
 echo [3/3] Demo finished. Please switch to the FFmpeg window and press 'q' to stop recording.
 echo Your video will be saved as antropi_nav2_demo.mp4 in this folder.
 pause
+

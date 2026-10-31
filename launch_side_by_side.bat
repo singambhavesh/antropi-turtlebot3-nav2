@@ -5,14 +5,14 @@ echo ======================================================================
 echo    ANTROPI ROBOTICS - TURTLEBOT3 NAV2 DEMO (SIDE-BY-SIDE)
 echo ======================================================================
 echo.
-echo Launching Gazebo in Terminal 1...
-start "Gazebo Simulation" cmd /k "wsl -d Ubuntu-22.04 -- bash -c \"source /opt/ros/humble/setup.bash && source '/mnt/c/Users/admin/OneDrive - Amrita vishwa vidyapeetham/Documents/Amtropic Assignmennt/ros_ws/install/setup.bash' && export TURTLEBOT3_MODEL=burger && ros2 launch antropi_nav_demo gazebo.launch.py\""
+echo Launching Gazebo in Terminal 1 (using software OpenGL for stable rendering)...
+start "Gazebo Simulation" cmd /k "wsl -d Ubuntu-22.04 -- bash -c \"export DISPLAY=:0 && export LIBGL_ALWAYS_SOFTWARE=1 && export QT_X11_NO_MITSHM=1 && source /opt/ros/humble/setup.bash && source '/mnt/c/Users/admin/OneDrive - Amrita vishwa vidyapeetham/Documents/Amtropic Assignmennt/ros_ws/install/setup.bash' && export TURTLEBOT3_MODEL=burger && ros2 launch antropi_nav_demo gazebo.launch.py\""
 
-echo Waiting 10 seconds for Gazebo to spawn robot and start physics...
-timeout /t 10 /nobreak >nul
+echo Waiting 12 seconds for Gazebo to spawn robot and start physics...
+timeout /t 12 /nobreak >nul
 
 echo Launching Nav2 + RViz in Terminal 2...
-start "Nav2 and RViz" cmd /k "wsl -d Ubuntu-22.04 -- bash -c \"source /opt/ros/humble/setup.bash && source '/mnt/c/Users/admin/OneDrive - Amrita vishwa vidyapeetham/Documents/Amtropic Assignmennt/ros_ws/install/setup.bash' && export TURTLEBOT3_MODEL=burger && ros2 launch antropi_nav_demo navigation.launch.py\""
+start "Nav2 and RViz" cmd /k "wsl -d Ubuntu-22.04 -- bash -c \"export DISPLAY=:0 && export LIBGL_ALWAYS_SOFTWARE=1 && export QT_X11_NO_MITSHM=1 && source /opt/ros/humble/setup.bash && source '/mnt/c/Users/admin/OneDrive - Amrita vishwa vidyapeetham/Documents/Amtropic Assignmennt/ros_ws/install/setup.bash' && export TURTLEBOT3_MODEL=burger && ros2 launch antropi_nav_demo navigation.launch.py\""
 
 echo.
 echo ======================================================================
