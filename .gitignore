@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+install/
+log/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+
+# ROS
+*.log
+*.db
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,74 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: false
+      Name: Grid
+    - Class: rviz_default_plugins/Map
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Update Topic: true
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Robot Description: robot_description
+    - Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Name: LaserScan
+      Topic: /scan
+      Size (m): 0.03
+      Color: 255; 255; 255
+      Style: Points
+    - Class: rviz_default_plugins/Path
+      Enabled: true
+      Name: Global Plan
+      Topic: /plan
+      Color: 0; 255; 0
+      Line Style: Lines
+      Line Width: 0.05
+    - Class: rviz_default_plugins/Path
+      Enabled: true
+      Name: Local Plan
+      Topic: /local_plan
+      Color: 0; 128; 255
+      Line Style: Lines
+      Line Width: 0.03
+    - Class: rviz_default_plugins/Map
+      Enabled: true
+      Name: Local Costmap
+      Topic: /local_costmap/costmap
+      Color Scheme: costmap
+    - Class: rviz_default_plugins/Map
+      Enabled: false
+      Name: Global Costmap
+      Topic: /global_costmap/costmap
+      Color Scheme: costmap
+    - Class: rviz_default_plugins/PoseArray
+      Enabled: true
+      Name: Particle Cloud
+      Topic: /particlecloud
+      Color: 255; 255; 0
+      Alpha: 1
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/SetInitialPose
+    - Class: rviz_default_plugins/SetGoal
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Scale: 14
+      Target Frame: <Fixed Frame>
+Window Geometry:
+  Height: 900
+  Width: 1400
